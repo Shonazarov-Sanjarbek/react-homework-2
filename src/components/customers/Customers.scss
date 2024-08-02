@@ -1,0 +1,105 @@
+.customers{
+    width: 100%;
+    background: #eff8f3;
+    padding: 90px 0;
+    &__block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 56px;
+        color: #0b254b;
+        margin-bottom: 15px;
+    }
+    &__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #5e6e89;
+        margin-bottom: 27px;
+    }
+    &__wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__card{
+        width: calc(33.33% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #Fff;
+        padding: 30px;
+    }
+    &__star{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 22px;
+        svg{
+            color: #56B280;
+        }
+    }
+    &__desc{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #1D293F;
+        margin-bottom: 6px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+    &__comment{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #7C8087;
+    }
+}
+
+
+@media (max-width: 950px){
+    .customers__desc{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .customers__comment{
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 750px){
+    .customers__card{
+        width: calc(50% - 15px);
+    }
+}
+@media (max-width: 500px){
+    .customers__card{
+        width: 100%;
+    }
+}
